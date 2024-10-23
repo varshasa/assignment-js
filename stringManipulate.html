@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Manipulation</title>
+</head>
+
+<body>
+    <script>
+        function manipulate(value, index, arr) {
+            return (value != 'a' && value != 'e');
+        }
+        var str = prompt("Enter the string");
+        var arr = str.split("");
+        var arr_new = arr.filter(manipulate);
+        console.log(arr_new.join(""));
+    </script>
+</body>
+
+</html>

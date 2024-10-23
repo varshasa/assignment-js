@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prime Numbers</title>
+  </head>
+  <body>
+    <script>
+      function prime() {
+        var flag = 0;
+        for (var i = 2; i <= 100; i++) {
+          for (var j = 2; j <= Math.sqrt(i); j++) {
+            if (i % j == 0) {
+              flag = 1;
+              break;
+            }
+          }
+          if (flag == 0) {
+            document.write(i + "<br>");
+          }
+          flag = 0;
+        }
+      }
+    </script>
+    <button onclick="prime()">Click me</button>
+  </body>
+</html>
